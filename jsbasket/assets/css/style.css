@@ -44,7 +44,7 @@ header .shopping span{
 .card{
    position: fixed;
    top: 0;
-   left: calc(100% - 500px);
+   left: 100%;
    width: 500px;
    background-color: #453E3B;
    height: 100vh;
@@ -76,4 +76,9 @@ grid-template-columns: repeat(2, 1fr);
   align-items: center;
   font-weight: bold;
   cursor: pointer;
+}
+.card .chekOut div:nth-child(2){
+  background-color: #1C1F25;
+  color: #fff;
+
 }
