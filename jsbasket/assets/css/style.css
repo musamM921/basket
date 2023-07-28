@@ -1,0 +1,39 @@
+/* Скрыть стандартный вид чекбокса */
+input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Оформление контейнера, который будет представлять чекбокс */
+  input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px; /* Отступ слева для контейнера */
+    cursor: pointer;
+  }
+  
+  /* Создание визуального представления чекбокса */
+  input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px; /* Регулировка вертикального выравнивания */
+    width: 18px; /* Ширина контейнера чекбокса */
+    height: 18px; /* Высота контейнера чекбокса */
+    border: 2px solid #000; /* Граница чекбокса */
+    background-color: #fff; /* Цвет фона чекбокса */
+  }
+  
+  /* Изменение внешнего вида чекбокса при его выборе */
+  input[type="checkbox"]:checked + label:before {
+    background-color: #2196F3; /* Изменение цвета фона при выборе чекбокса */
+    border: 2px solid #2196F3; /* Изменение цвета границы при выборе чекбокса */
+  }
+  
+  /* Опциональные стили для отображения галочки */
+  input[type="checkbox"]:checked + label:before {
+    content: "\2713"; /* Указание кода символа "галочка" */
+    text-align: center;
+    line-height: 18px; /* Регулировка высоты галочки для вертикального выравнивания */
+    font-size: 16px; /* Размер галочки */
+    color: #fff; /* Цвет галочки */
+  }
+  
