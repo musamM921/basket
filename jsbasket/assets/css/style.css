@@ -93,5 +93,6 @@ left: calc(100% - 500px);
 .list .item {
   text-align: center;
   background-color: #dce0e1;
+  padding: 20px;
 
 }
