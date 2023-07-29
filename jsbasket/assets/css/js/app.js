@@ -12,6 +12,8 @@ openShopping.addEventListener('click', ()=>{
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
+
+
 let products = [
     {
       id: 1,
@@ -51,3 +53,19 @@ let products = [
       },
 
 ];
+let listCards = [];
+function initApp(){
+products.forEach(function (value, key) {
+    let newDiv = document.createElement('div');
+    newDiv.classList.add('item');
+    newDiv.innerHTML = `
+    <img src="image/${value.image}"/>
+    <div class ="titile">${value.name}</div>
+    <div class ='price'>${value.price.toLocaleString()}</div>
+    <button oneclick="addToCard(${key})">Add To Card</button>
+  `;
+    list.appendChild(newDiv);
+
+})
+}
+initApp();

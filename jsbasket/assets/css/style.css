@@ -90,3 +90,8 @@ left: calc(100% - 500px);
 .active .container{
   transform: translateX(-200px);
 }
+.list .item {
+  text-align: center;
+  background-color: #dce0e1;
+
+}
