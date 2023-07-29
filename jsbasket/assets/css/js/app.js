@@ -77,5 +77,12 @@ function reloadCard(){
    listCards.forEach((value, key) => {
     totalPrice = totalPrice + value.price;
     count = count + value.quantity;
+
+    if(value != null){
+      let newDiv = document.createElement('li');
+      listCard.appendChild(newDiv);
+    }
    })
+   total.innerText = totalPrice.toLocaleString();
+   quantity.innerText = count;
 }
