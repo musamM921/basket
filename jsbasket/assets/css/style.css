@@ -111,4 +111,14 @@ left: calc(100% - 500px);
   color: #fff;
   padding: 10px;
   width: 100%;
+  padding: 10px;
+}
+.card{
+  position: fixed;
+  top:0;
+  left: 100%;
+  width: 500px;
+  background-color: #453E3B;
+  height: 100vh;
+  transition: 0.5s;
 }
