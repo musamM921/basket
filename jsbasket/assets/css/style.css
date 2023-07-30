@@ -122,3 +122,6 @@ left: calc(100% - 500px);
   height: 100vh;
   transition: 0.5s;
 }
+.active .container{
+  transform: translateX(-200px);
+}
